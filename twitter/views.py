@@ -122,7 +122,7 @@ def get_tweets(username):
 
 
 def auth(request):
-    auth = tweepy.OAuthHandler(consumer_key, consumer_secret,'http://127.0.0.1:8000/callback')
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret,'https://tweetlinks18.herokuapp.com/callback')
 
     try:
         redirect_url = auth.get_authorization_url()
